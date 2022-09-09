@@ -35,6 +35,7 @@ if __name__ == '__main__':
 	# load dataset
 	X, y = load_data()
 
+	print(X.shape)
         #Create the neural network
 	model = Sequential(
 	    [               
