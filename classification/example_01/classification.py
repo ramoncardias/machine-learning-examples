@@ -56,8 +56,8 @@ def train_model(model, train_features, train_label, epochs,
 if __name__ == '__main__':
 	# Initialize parameter
 	classes = 4
-	m = 500
-	centers = [[-5, 2], [-2, -2], [1, 2], [5, -2]]
+	m = 1000
+	centers = [[-6, 3], [-3, -3], [3, 3], [6, -3]]
 	std = 1.0
 	X, y = make_blobs(n_samples=m, centers=centers, cluster_std=std,random_state=30)
 
