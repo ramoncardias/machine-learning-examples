@@ -9,4 +9,7 @@ Adding addapted examples found in the internet, books etc.
 * Neural network for handwrite recognition
 
   Using neural network to recognize handwritten numbers. MNIST data downloaded from keras database.
- 
+
+* Classification
+
+  Using neural network for a multiclassification task. Data set generated using sklearn library 

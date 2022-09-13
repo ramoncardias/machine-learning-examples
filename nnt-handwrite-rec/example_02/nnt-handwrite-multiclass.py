@@ -38,6 +38,7 @@ def create_model(my_learning_rate):
 	model.add(tf.keras.Input(shape=(784,)))
 	
 	# Define the first hidden layer.   
+	model.add(tf.keras.layers.Dense(units=256, activation='relu'))
 	model.add(tf.keras.layers.Dense(units=128, activation='relu'))
 	model.add(tf.keras.layers.Dense(units=64, activation='relu'))
 	model.add(tf.keras.layers.Dense(units=32, activation='relu'))
@@ -90,11 +91,12 @@ if __name__ == '__main__':
 	x_test_normalized = x_test.reshape(10000,784) / 255
 
 	# The following variables are the hyperparameters.
-	learning_rate = 0.003
-	epochs = 50
+	learning_rate = 0.001
+	epochs = 100
 	batch_size = 4000
 	validation_split = 0.2
 	
+	print(x_train_normalized[5000])
 	# Establish the model's topography.
 	my_model = create_model(learning_rate)
 	
